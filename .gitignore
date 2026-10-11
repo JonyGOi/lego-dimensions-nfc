@@ -12,3 +12,6 @@
 *.aab
 generate_languages.py
 add_credits_strings.py
+*.jks
+*.keystore
+keystore.properties

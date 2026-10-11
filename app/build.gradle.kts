@@ -20,9 +20,29 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            val keystoreFile = file("${rootDir}/release.jks")
+            if (keystoreFile.exists()) {
+                storeFile = keystoreFile
+                storePassword = "legoNfc2026!"
+                keyAlias = "legonfc"
+                keyPassword = "legoNfc2026!"
+                enableV1Signing = true
+                enableV2Signing = true
+                enableV3Signing = true
+                enableV4Signing = true
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            val keystoreFile = file("${rootDir}/release.jks")
+            if (keystoreFile.exists()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
