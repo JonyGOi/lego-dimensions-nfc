@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Créditos"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Desenvolvedor Brasileiro 🇧🇷"</string>
+    <string name="developer_nationality">"Desenvolvedor Brasileiro"</string>
     <string name="credits_title">"Créditos &amp; Desenvolvedor"</string>
     <string name="credits_about_title">"Sobre o Projeto"</string>
     <string name="credits_about_desc">"Aplicativo Android completo para gravação e leitura de tags NFC (NTAG213 e NTAG215) para o LEGO Dimensions Toy Pad, com gravação ultrarrápida de 30ms, 157 itens inclusos, gerador por ID e backup."</string>

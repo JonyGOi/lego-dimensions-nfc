@@ -1,81 +1,78 @@
-# LEGO Dimensions NFC Writer 🎮📱
+# LEGO Dimensions NFC Writer
 
-Um aplicativo Android nativo moderno em **Jetpack Compose** e **Kotlin** para leitura, geração e gravação de tags NFC (NTAG213 e NTAG215) para o jogo **LEGO Dimensions**.
+A native Android application built with Jetpack Compose and Kotlin for reading, generating, and writing NFC tags (NTAG213 and NTAG215) for LEGO Dimensions.
 
-Criado e desenvolvido por **João Pedro Favoni Fernandes** 🇧🇷.
-
----
-
-## 🌟 Funcionalidades
-
-- **Catálogo Completo**:
-  - Todos os 75+ personagens do jogo com habilidades e franquias detalhadas.
-  - Todos os veículos e gadgets em **todos os 3 níveis de reconstrução** (Nível 1 - Padrão, Nível 2 e Nível 3), totalizando mais de 260 variações.
-  - Filtro prático por categoria e nível de reconstrução.
-- **Ícones Originais Offline**:
-  - Mais de 310 ícones circulares correspondentes aos tokens das etiquetas originais embutidos no aplicativo.
-- **Gravação Ultra-Rápida (< 1 segundo)**:
-  - Gravação otimizada com 3 comandos essenciais diretos:
-    1. Página `0x24` (ID do personagem criptografado com a UID da tag ou ID do veículo)
-    2. Página `0x25`/`0x26` (Chave de criptografia ou flag de veículo `00 01 00 00`)
-    3. Página `0x2B`/`0x85` (Senha de proteção NTAG `PWD`)
-- **Suporte a Multi-Línguas**:
-  - Suporte completo a dezenas de idiomas (Português, Inglês, Espanhol, Francês, Alemão, Italiano, Japonês, Chinês e mais).
-  - Seletor de idioma em tempo real dentro do app.
-- **Modo Avançado**:
-  - Gravação direta por ID numérico.
-  - Suporte a tags NTAG213 e NTAG215 (incluindo tags com UID gravável / Gen2).
-- **Histórico Local**:
-  - Registro de todas as tags gravadas com data, status e UID.
-- **Aba de Créditos**:
-  - Informações do autor do projeto e agradecimentos à comunidade open-source.
+Developed by João Pedro Favoni Fernandes (Brazil).
 
 ---
 
-## 🚀 Como Compilar e Executar
+## Features
 
-### Pré-requisitos
-- Android Studio Iguana / Jellyfish ou superior
+- Complete Catalog:
+  - All 75+ characters with detailed abilities and franchises.
+  - All vehicles and gadgets across all 3 rebuild tiers (Level 1 - Default, Level 2, and Level 3), totaling over 260 variations.
+  - Category and rebuild level filter chips.
+- Offline Ring Token Icons:
+  - Over 310 circular icons corresponding to the official token labels embedded directly in the application.
+- Ultra-Fast Tag Writing (< 1 second):
+  - Direct 3-command writing sequence:
+    1. Page 0x24: Character ID (encrypted with tag UID) or Vehicle ID.
+    2. Page 0x25 / 0x26: Encryption key or vehicle flag (00 01 00 00).
+    3. Page 0x2B / 0x85: NTAG password protection (PWD).
+- Multi-Language Support:
+  - Comprehensive internationalization supporting dozens of languages (English, Portuguese, Spanish, French, German, Italian, Japanese, Chinese, and more).
+  - In-app language selector.
+- Advanced Mode:
+  - Direct tag creation by numeric ID.
+  - Support for standard NTAG213 and NTAG215 tags (including Gen2 / magic UID tags).
+- Local History:
+  - Detailed log of written tags with timestamp, UID, and status.
+- Credits:
+  - Author and developer recognition, along with open-source community acknowledgments.
+
+---
+
+## Building from Source
+
+### Prerequisites
+- Android Studio (Iguana, Jellyfish, or newer)
 - JDK 17
 - Android SDK 34
-- Dispositivo Android com leitor NFC ativado (Android 8.0+)
+- Android device running Android 8.0 or higher with NFC hardware enabled
 
-### Compilação via Linha de Comando (Gradle)
+### Command Line Build (Gradle)
 
 ```bash
-# Clone o repositório
-git clone https://github.com/SEU_USUARIO/lego-dimensions-nfc.git
+git clone https://github.com/JonyGOi/lego-dimensions-nfc.git
 cd lego-dimensions-nfc
 
-# Compilar versão de depuração (Debug APK)
 ./gradlew assembleDebug
-
-# O APK estará disponível em:
-# app/build/outputs/apk/debug/app-debug.apk
 ```
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagem**: Kotlin 1.9.22
-- **UI Toolkit**: Jetpack Compose com Material Design 3
-- **NFC**: Android NFC Adapter (ReaderMode com `FLAG_READER_NFC_A`)
-- **Criptografia**: Algoritmo Tiny Encryption Algorithm (TEA) customizado para LEGO Dimensions
-- **Arquitetura**: MVVM com StateFlow e Coroutines
+The compiled APK will be generated at:
+`app/build/outputs/apk/debug/app-debug.apk`
 
 ---
 
-## 👨‍💻 Créditos e Agradecimentos
+## Technical Stack
 
-- **Desenvolvedor**: João Pedro Favoni Fernandes 🇧🇷
-- **Agradecimentos Especiais**:
-  - Comunidade de preservação e engenharia reversa do LEGO Dimensions.
-  - Laurent Ellerbach pelo repositório aberto de documentação e algoritmos de criptografia de tags do LEGO Dimensions.
-  - Ferramentas comunitárias de etiquetas e tokens.
+- Language: Kotlin 1.9.22
+- UI Toolkit: Jetpack Compose with Material Design 3
+- NFC: Android NFC ReaderMode (FLAG_READER_NFC_A)
+- Cryptography: Custom Tiny Encryption Algorithm (TEA) implementation for LEGO Dimensions
+- Architecture: MVVM with StateFlow and Coroutines
 
 ---
 
-## 📄 Licença
+## Credits and Acknowledgments
 
-Este projeto é destinado para fins educacionais e de preservação. LEGO® e LEGO Dimensions são marcas registradas do Grupo LEGO.
+- Developer: João Pedro Favoni Fernandes (Brazil)
+- Special Acknowledgments:
+  - LEGO Dimensions preservation and reverse engineering community.
+  - Laurent Ellerbach for the open-source research and documentation on tag encryption algorithms.
+
+---
+
+## License
+
+This project is created for educational and preservation purposes. LEGO and LEGO Dimensions are registered trademarks of the LEGO Group.

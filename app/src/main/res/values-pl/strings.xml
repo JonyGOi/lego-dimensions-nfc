@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Twórcy"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Brazylijski programista 🇧🇷"</string>
+    <string name="developer_nationality">"Brazylijski programista"</string>
     <string name="credits_title">"Twórcy i programista"</string>
     <string name="credits_about_title">"O Projekcie"</string>
     <string name="credits_about_desc">"Kompletna aplikacja na Androida dla tagów NFC LEGO Dimensions (NTAG213 i NTAG215), z ultraszybkim zapisem w 30ms, 157 gotowymi przedmiotami, generatorem ID i kopią zapasową."</string>

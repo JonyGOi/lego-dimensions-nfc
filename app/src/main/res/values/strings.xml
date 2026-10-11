@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Credits"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Brazilian Developer 🇧🇷"</string>
+    <string name="developer_nationality">"Brazilian Developer"</string>
     <string name="credits_title">"Credits &amp; Developer"</string>
     <string name="credits_about_title">"About the Project"</string>
     <string name="credits_about_desc">"Complete Android application for LEGO Dimensions Toy Pad NFC tags (NTAG213 and NTAG215), featuring high-speed 30ms writing, 157 bundled items, custom ID generation, and backup tools."</string>

@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Emeği Geçenler"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Brezilyalı Geliştirici 🇧🇷"</string>
+    <string name="developer_nationality">"Brezilyalı Geliştirici"</string>
     <string name="credits_title">"Emeği Geçenler ve Geliştirici"</string>
     <string name="credits_about_title">"Proje Hakkında"</string>
     <string name="credits_about_desc">"LEGO Dimensions NFC etiketleri (NTAG213 ve NTAG215) için 30ms süper hızlı yazma, 157 dahil öğe, ID üreteci ve yedekleme sunan eksiksiz Android uygulaması."</string>

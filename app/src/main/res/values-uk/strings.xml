@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Автори"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Бразильський розробник 🇧🇷"</string>
+    <string name="developer_nationality">"Бразильський розробник"</string>
     <string name="credits_title">"Автори та розробник"</string>
     <string name="credits_about_title">"Про проєкт"</string>
     <string name="credits_about_desc">"Повноцінний додаток Android для NFC-тегів LEGO Dimensions (NTAG213 та NTAG215) із надшвидким записом за 30 мс, 157 вбудованими предметами та резервним копіюванням."</string>

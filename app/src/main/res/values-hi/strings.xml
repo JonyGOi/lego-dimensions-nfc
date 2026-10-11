@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"श्रेय"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"ब्राज़ीलियाई डेवलपर 🇧🇷"</string>
+    <string name="developer_nationality">"ब्राज़ीलियाई डेवलपर"</string>
     <string name="credits_title">"श्रेय और डेवलपर"</string>
     <string name="credits_about_title">"परियोजना के बारे में"</string>
     <string name="credits_about_desc">"लेगो डायमेंशन NFC टैग (NTAG213 और NTAG215) के लिए संपूर्ण एंड्रॉइड ऐप, 30ms सुपरफास्ट लेखन, 157 आइटम, ID जनरेटर और बैकअप टूल्स के साथ।"</string>

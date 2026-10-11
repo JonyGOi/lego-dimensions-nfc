@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"鳴謝"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"巴西開發者 🇧🇷"</string>
+    <string name="developer_nationality">"巴西開發者"</string>
     <string name="credits_title">"製作人員與開發者"</string>
     <string name="credits_about_title">"關於專案"</string>
     <string name="credits_about_desc">"專為 LEGO Dimensions NFC 標籤（NTAG213 和 NTAG215）打造的完整 Android 應用程式，支援 30ms 極速寫入、內建 157 個項目、自訂 ID 產生及備份功能。"</string>

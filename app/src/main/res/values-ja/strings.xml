@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"クレジット"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"ブラジルの開発者 🇧🇷"</string>
+    <string name="developer_nationality">"ブラジルの開発者"</string>
     <string name="credits_title">"クレジット＆開発者"</string>
     <string name="credits_about_title">"プロジェクトについて"</string>
     <string name="credits_about_desc">"LEGO Dimensions NFCタグ（NTAG213およびNTAG215）用の完全なAndroidアプリ。30msの超高速書き込み、157個の収録アイテム、ID生成、バックアップ機能を搭載。"</string>

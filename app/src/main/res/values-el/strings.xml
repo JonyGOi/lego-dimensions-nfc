@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Συντελεστές"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Βραζιλιάνος Προγραμματιστής 🇧🇷"</string>
+    <string name="developer_nationality">"Βραζιλιάνος Προγραμματιστής"</string>
     <string name="credits_title">"Συντελεστές &amp; Προγραμματιστής"</string>
     <string name="credits_about_title">"Σχετικά με το Έργο"</string>
     <string name="credits_about_desc">"Ολοκληρωμένη εφαρμογή Android για ετικέτες LEGO Dimensions NFC (NTAG213 και NTAG215) με εξαιρετικά γρήγορη εγγραφή 30ms, 157 στοιχεία και δημιουργία αντιγράφων."</string>

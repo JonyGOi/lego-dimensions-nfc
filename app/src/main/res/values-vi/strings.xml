@@ -81,7 +81,7 @@
 
     <string name="nav_credits">"Tác giả"</string>
     <string name="developer_name">"João Pedro Favoni Fernandes"</string>
-    <string name="developer_nationality">"Nhà phát triển người Brazil 🇧🇷"</string>
+    <string name="developer_nationality">"Nhà phát triển người Brazil"</string>
     <string name="credits_title">"Tác giả &amp; Nhà phát triển"</string>
     <string name="credits_about_title">"Về Dự Án"</string>
     <string name="credits_about_desc">"Ứng dụng Android hoàn chỉnh cho thẻ NFC LEGO Dimensions (NTAG213 và NTAG215), với tốc độ ghi siêu nhanh 30ms, 157 mục tích hợp và công cụ sao lưu."</string>

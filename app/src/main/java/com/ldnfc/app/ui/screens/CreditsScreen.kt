@@ -226,7 +226,7 @@ fun CreditsScreen() {
                 color = MaterialTheme.colorScheme.primary
             )
             Text(
-                text = "Orgulhosamente criado no Brasil 🇧🇷",
+                text = "Orgulhosamente criado no Brasil",
                 fontSize = 11.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(top = 2.dp)
