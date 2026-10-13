@@ -28,42 +28,33 @@ class DumpRepository(private val context: Context) {
 
         cachedItems.clear()
 
-        // 1. Carrega Characters
+        // 1. Carrega Characters dos assets
         loadCategoryFromAssets("Dimensions/Characters", ItemCategory.CHARACTER)
 
-        // 2. Carrega Vehicles dos assets (.bin originais)
-        loadCategoryFromAssets("Dimensions/Vehicles", ItemCategory.VEHICLE)
-
-        // 3. Carrega Gadgets dos assets (.bin originais)
-        loadCategoryFromAssets("Dimensions/Gadgets", ItemCategory.GADGET)
-
-        // 4. Carrega todos os veículos em todos os níveis (Rebuild 1, 2 e 3) de DimensionsCatalog
+        // 2. Carrega todos os veículos e gadgets de DimensionsCatalog (com IDs, nomes e níveis únicos)
         for (vDef in DimensionsCatalog.vehicles) {
-            if (vDef.id <= 0) continue
-            val alreadyLoaded = cachedItems.any { it.id == vDef.id }
-            if (!alreadyLoaded) {
-                val category = if (vDef.world.contains("Portal", ignoreCase = true) ||
-                    vDef.name.contains("Trap", ignoreCase = true) ||
-                    vDef.name.contains("Pad", ignoreCase = true)
-                ) {
-                    ItemCategory.GADGET
-                } else {
-                    ItemCategory.VEHICLE
-                }
-                val syntheticDump = createItemFromNumericId(vDef.id, category).rawDump
-                cachedItems.add(
-                    DimensionsItem(
-                        id = vDef.id,
-                        name = vDef.name,
-                        category = category,
-                        world = vDef.world,
-                        abilities = vDef.abilities,
-                        rebuild = vDef.rebuild,
-                        assetPath = null,
-                        rawDump = syntheticDump
-                    )
-                )
+            if (vDef.id <= 0 || vDef.name.equals("Unknown", ignoreCase = true)) continue
+            val category = if (vDef.world.contains("Portal", ignoreCase = true) ||
+                vDef.name.contains("Trap", ignoreCase = true) ||
+                vDef.name.contains("Pad", ignoreCase = true)
+            ) {
+                ItemCategory.GADGET
+            } else {
+                ItemCategory.VEHICLE
             }
+            val syntheticDump = createItemFromNumericId(vDef.id, category).rawDump
+            cachedItems.add(
+                DimensionsItem(
+                    id = vDef.id,
+                    name = vDef.name,
+                    category = category,
+                    world = vDef.world,
+                    abilities = vDef.abilities,
+                    rebuild = vDef.rebuild,
+                    assetPath = null,
+                    rawDump = syntheticDump
+                )
+            )
         }
 
         // Ordena por nome
